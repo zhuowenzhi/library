@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="main.html">图书借阅管理</a></li>
+    <li><a href="useredit.html">借阅列表</a></li>
+    </ul>
+    </div>
+    <div class="rightinfo">
+        <!--<div class="tools">-->
+          <!--<ul class="toolbar">-->
+            <!--<li><span><input class="search" type="text" name="search" placeholder="请输入人员编号"></span></li>-->
+            <!--<li><span><input class="search" type="text" name="search" placeholder="请输入人员名称"></span></li>-->
+            <!--<li><span><div id="search">搜索</div> </span></li>-->
+          <!--</ul>-->
+        <!--</div>-->
+    <table class="imgtable">
+    <thead>
+    <tr>
+        <th class="id">图书编号</th>
+        <th class="id">借阅者编号</th>
+        <th>借阅日期</th>
+        <th>操作</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><input type="text" name="bookId"  id="bookId" ></td>
+        <td><input type="text" name="userId" id="userId" placeholder="请输入借阅者编号"></td>
+        <td><input type="text" name="date" id="date" placeholder="请输入借阅日期"></td>
+        <td>
+          <input type="submit" value="借阅" id="add">
+          <!--<input type="reset" value="重置">-->
+        </td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/userbookadd1.js"></script>
+</html>

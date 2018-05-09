@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.shiro:shiro-ehcache:1.2.3">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-ehcache/1.2.3/shiro-ehcache-1.2.3.jar!/" />
+    </CLASSES>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-ehcache/1.2.3/shiro-ehcache-1.2.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <form onsubmit="return false">
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="main.html">人员管理</a></li>
+    <li><a href="useradd.html">人员增加列表</a></li>
+    </ul>
+  </div>
+    <table class="imgtable">
+    <thead>
+    <tr>
+    <th hidden>工号编号</th>
+    <th>姓名</th>
+    <th>性别</th>
+    <th>入职年份</th>
+    <th>角色编号</th>
+      <th>电话</th>
+    <th>增加操作</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    <tr>
+        <td hidden><input type="text" name="id" id="id" placeholder="请输入人员编号"></td>
+        <td><input type="text" name="name"  id="name" placeholder="请输入人员名称"></td>
+        <td><input type="text" name="sex"  id="sex" placeholder="请输入性别"></td>
+        <td><input type="text" name="entry"  id="entry" placeholder="请输入入职年份"></td>
+      <td><input type="text" name="roleId" id="roleId" placeholder="请输入角色编号"></td>
+        <td><input type="text" name="phone" id="phone" placeholder="请输入电话"></td>
+      <td>
+        <input type="submit" id="submit" onclick="return false" value="添加">
+        <input type="reset" value="重置">
+        </td>
+    </tr>
+    </tbody>
+    </table>
+  </form>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/useradd1.js"></script>
+</html>

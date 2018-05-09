@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <form onsubmit="return false">
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+      <li><a href="main.html">图书管理</a></li>
+      <li><a href="bookadd.html">增加图书列表</a></li>
+    </ul>
+  </div>
+    <table class="imgtable">
+    <thead>
+    <tr>
+    <th hidden>图书编号</th>
+    <th>图书名称</th>
+    <th>出版社</th>
+    <th>出版年份</th>
+    <th>图书价格</th>
+    <th>图书数量</th>
+      <th>图书状态</th>
+    <th>操作</th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+      <tr>
+        <td hidden><input type="text" name="id"  id="id" placeholder="请输入图书编号" ></td>
+        <td><input type="text" name="name" id="name" placeholder="请输入图书名称"></td>
+        <td><input type="text" name="press" id="press" placeholder="请输入出版社"></td>
+        <td><input type="text" name="publication" id="publication" placeholder="请输入图书年份"></td>
+        <td><input type="text" name="price" id="price" placeholder="请输入图书价格"></td>
+        <td><input type="text" name="quantity" id="quantity" placeholder="请输入图书数量"></td>
+        <!--<td><input type="text" name="status"  id="status" placeholder="请输入图书状态"></td>-->
+       <td>
+         <select id="status" name="status">
+           <option value="0">0无库存</option>
+           <option value="1">1有库存</option>
+         </select>
+       </td>
+        <td>
+          <input type="submit" id="submit" onclick="return false" value="添加">
+          <input type="reset" value="重置">
+        </td>
+      </tr>
+    </tbody>
+    </table>
+  </form>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bookadd1.js"></script>
+</html>

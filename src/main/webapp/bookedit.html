@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<form onsubmit="return false" id="formEdit">
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="main.html">图书管理</a></li>
+    <li><a href="bookedit.html">图书修改列表</a></li>
+    </ul>
+    </div>
+    <!---->
+    <!--<div class="tools">-->
+        <!--<ul class="toolbar" class="find">-->
+          <!--<li class="click"><span><input class="search" type="text" name="userId" placeholder="请输入工号"></li>-->
+          <!--<li class="click"><span><input class="search" type="text" name="bookId" placeholder="请输入图书编号"></li>-->
+          <!--<li><span><div id="search">搜索</div> </span></li>-->
+        <!--</ul>-->
+  <!--</div>-->
+    <table class="imgtable">
+    <thead>
+    <tr>
+    <th class="id" hidden>图书编号</th>
+    <th>图书名称</th>
+        <th>出版年份</th>
+    <th>出版社</th>
+    <th>图书价格</th>
+    <th>图书数量</th>
+     <th>状态</th>
+    <th>修改操作</th>
+    </tr>
+    </thead>
+        <tbody id="tbody">
+        <tr>
+            <td hidden><input type="text" name="id"  id="id" placeholder="请输入图书编号" ></td>
+            <td><input type="text" name="name" id="name" placeholder="请输入图书名称"></td>
+            <td><input type="text" name="press" id="press" placeholder="请输入出版社"></td>
+            <td><input type="text" name="publication" id="publication" placeholder="请输入图书年份"></td>
+            <td><input type="text" name="price" id="price" placeholder="请输入图书价格"></td>
+            <td><input type="text" name="quantity" id="quantity" placeholder="请输入图书数量"></td>
+            <!--<td><input type="text" name="status" id="status" placeholder="请输入图书状态0或1"></td>-->
+            <td>
+                <select id="status" name="status">
+                    <option value="0">0无库存</option>
+                    <option value="1">1有库存</option>
+                </select>
+            </td>
+            <td>
+                <input type="submit" id="edit" onclick="return false" value="修改">
+                <input type="reset" value="重置">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</form>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bookedit.js"></script>
+</html>

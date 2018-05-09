@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="main.html">人员管理</a></li>
+    <li><a href="user.html">人员信息列表</a></li>
+    </ul>
+    </div>
+    <div class="rightinfo">
+      
+      <div class="tools">
+      
+        <ul class="toolbar">
+          <li class="click"><span><img src="images/t01.png" /></span><a href="useradd.html">添加</a></li>
+          <!--<li class="click"><span><img src="images/t02.png" /></span><a href="useredit.html">修改</a></li>-->
+          <!--<li><span><img src="images/t03.png" /></span><a href="userdelete.html">删除</a></li>-->
+          <li><span><input class="search" type="text" name="id" id="id" placeholder="请输入人员编号"></span></li>
+          <!--<li><span><input class="search" type="text" name="name" id="name" placeholder="请输入人员名称"></span></li>-->
+          <li><span><div id="search">搜索</div> </span></li>
+            <li><span><button onclick="showAll()" id="searchAll">查看所有</button></span></li>
+        </ul>
+      </div>
+    <div class="rightinfo">
+    <table class="imgtable">
+    <thead>
+    <tr>
+    <th class="id">工号编号</th>
+    <th>姓名</th>
+    <th>性别</th>
+    <th>入职年份</th>
+        <th>角色编号</th>
+    <th>电话</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+    </table>
+    </div>
+
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/user.js"></script>
+</html>

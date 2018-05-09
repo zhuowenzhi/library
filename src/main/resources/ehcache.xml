@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache name="shirocache">
+    <diskStore path="java.io.tmpdir" />
+    <!--shrio 安全框架中关于各种缓存的配置-->
+    <cache name="passwordRetryCache"
+           maxEntriesLocalHeap="2000"
+           eternal="true"
+           timeToIdleSeconds="720000"
+           timeToLiveSeconds="720000"
+           overflowToDisk="false"
+           statistics="true">
+    </cache>
+</ehcache>

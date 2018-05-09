@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type"  charset="utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="main.html">人员管理</a></li>
+    <li><a href="useredit.html">人员修改列表</a></li>
+    </ul>
+    </div>
+    <div class="rightinfo">
+        <!--<div class="tools">-->
+          <!--<ul class="toolbar">-->
+            <!--<li><span><input class="search" type="text" name="search" placeholder="请输入人员编号"></span></li>-->
+            <!--<li><span><input class="search" type="text" name="search" placeholder="请输入人员名称"></span></li>-->
+            <!--<li><span><div id="search">搜索</div> </span></li>-->
+          <!--</ul>-->
+        <!--</div>-->
+    <table class="imgtable">
+    <thead>
+    <tr>
+    <th class="id" hidden>工号编号</th>
+    <th>姓名</th>
+    <th>性别</th>
+    <th>入职年份</th>
+        <th>角色编号</th>
+    <th>电话</th>
+    <th>修改操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td hidden><input type="text" name="id" id="id" placeholder="请输入人员编号"></td>
+        <td><input type="text" name="name" id="name" placeholder="请输入人员名称"></td>
+        <td><input type="text" name="sex" id="sex" placeholder="请输入性别"></td>
+        <td><input type="text" naem="entry" id="entry" placeholder="请输入入职年份"></td>
+        <td><input type="text" naem="entry" id="roleId" placeholder="请输入入职年份"></td>
+        <td><input type="text" name="phone" id="phone" placeholder="请输入电话"></td>
+      <td>
+          <input type="submit" value="修改" id="edit">
+          <input type="reset" value="重置">
+        </td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/useredit.js"></script>
+
+</html>
