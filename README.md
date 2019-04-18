@@ -13,3 +13,9 @@
 * spring：1.0
 * mybatis：1.0
 * mysql：5.5.1
+
+# 功能
+
+JavaScript+ Ajax + Java
+
+完成基本图书增删改查
